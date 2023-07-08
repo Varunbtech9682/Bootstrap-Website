@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-5.3.0-dist/css/bootstrap.min.css">
+
+    <script src="./bootstrap-5.3.0-dist/js/bootstrap.bundle.js"></script>
+
+    <style>
+        .custom-tooltip {
+                        --bs-tooltip-bg: var(--bs-primary);
+                        }
+    </style>
+</head>
+<body>
+    <div class="alert alert-dark" role="alert">
+        A simple dark alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+      </div>
+      <button type="button" class="btn btn-primary position-relative">
+        Inbox
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+          99+
+          <span class="visually-hidden">unread messages</span>
+        </span>
+      </button>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active" aria-current="page">Home</li>
+        </ol>
+      </nav>
+      
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Library</li>
+        </ol>
+      </nav>
+      
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Library</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Data</li>
+        </ol>
+      </nav>
+      <button type="button" class="btn btn-outline-primary">Primary</button>
+      <button type="button" class="btn btn-outline-secondary">Secondary</button>
+      <button type="button" class="btn btn-outline-success">Success</button>
+      <button type="button" class="btn btn-outline-danger">Danger</button>
+      <button type="button" class="btn btn-outline-warning">Warning</button>
+      <button type="button" class="btn btn-outline-info">Info</button>
+      <button type="button" class="btn btn-outline-light">Light</button>
+      <div class="d-grid gap-2">
+        <button class="btn btn-primary" type="button">Button</button>
+      </div>
+      <button type="button" class="btn btn-primary" data-bs-toggle="button">Toggle button</button>
+      <button type="button" class="btn btn-primary active" data-bs-toggle="button" aria-pressed="true">Active toggle button</button>
+      <button type="button" class="btn btn-primary" disabled data-bs-toggle="button">Disabled toggle button</button>
+
+      <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+        <label class="btn btn-outline-primary" for="btnradio1">Radio 1</label>
+      
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btnradio2">Radio 2</label>
+      
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btnradio3">Radio 3</label>
+      </div>
+      <button type="button" class="btn-close" disabled aria-label="Close"></button>
+      <p>
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button>
+      </p>
+      <div class="row">
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample1">
+            <div class="card card-body">
+              Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample2">
+            <div class="card card-body">
+              Some placeholder content for the second collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Example split danger button -->
+<div class="btn-group">
+    <button type="button" class="btn btn-danger">Action</button>
+    <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+      <span class="visually-hidden">Toggle Dropdown</span>
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="#">Separated link</a></li>
+    </ul>
+  </div>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          hello this is a modal
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+    Link with href
+  </a>
+  <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+    Button with data-bs-target
+  </button>
+  
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+        Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+      </div>
+      <div class="dropdown mt-3">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+          Dropdown button
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <nav aria-label="...">
+    <ul class="pagination">
+      <li class="page-item disabled">
+        <span class="page-link">Previous</span>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item active" aria-current="page">
+        <span class="page-link">2</span>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#">Next</a>
+      </li>
+    </ul>
+  </nav>
+  <button type="button" class="btn btn-secondary"
+  data-bs-toggle="popover" data-bs-placement="right"
+  data-bs-custom-class="custom-popover"
+  data-bs-title="Custom popover"
+  data-bs-content="This popover is themed via CSS variables.">
+Custom popover
+</button>
+
+<div class="row">
+  <div class="col-4">
+    <div id="list-example" class="list-group">
+      <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
+      <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
+      <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+      <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+    </div>
+  </div>
+  <div class="col-8">
+    <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+      <h4 id="list-item-1">Item 1</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa distinctio iusto omnis deleniti harum tempora cupiditate? Maxime possimus maiores numquam cum, accusamus, labore autem explicabo praesentium illum assumenda, nesciunt nulla.</p>
+      <h4 id="list-item-2">Item 2</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi cum eveniet expedita optio error vitae, voluptates nobis adipisci, fugit debitis iusto? Cum corporis aspernatur adipisci consequatur tempora odio consectetur itaque.</p>
+      <h4 id="list-item-3">Item 3</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ut molestias quos voluptas soluta assumenda iure repellat quaerat iusto officia autem nulla nisi ipsam tenetur, accusamus, repellendus, dolorem id delectus.</p>
+      <h4 id="list-item-4">Item 4</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptatibus ipsum itaque eveniet repellat? Tempora repudiandae magni ipsum tenetur eaque autem expedita. Sint quae hic illum quam dicta ex aliquam.</p>
+    </div>
+  </div>
+</div>
+<div class="spinner-border text-primary" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <div class="spinner-border text-secondary" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <div class="spinner-border text-success" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <div class="spinner-border text-danger" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <div class="spinner-border text-warning" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <div class="spinner-border text-info" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <div class="spinner-border text-light" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <div class="spinner-border text-dark" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
+
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <img src="..." class="rounded me-2" alt="...">
+      <strong class="me-auto">Bootstrap</strong>
+      <small>11 mins ago</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      Hello, world! This is a toast message.
+    </div>
+  </div>
+</div>
+
+<button type="button" class="btn btn-secondary"
+        data-bs-toggle="tooltip" data-bs-placement="top"
+        data-bs-custom-class="custom-tooltip"
+        data-bs-title="This top tooltip is themed via CSS variables.">
+  Custom tooltip
+</button>
+
+
+    <script>const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))</script>
+
+    
+    <script>const toastTrigger = document.getElementById('liveToastBtn')
+const toastLiveExample = document.getElementById('liveToast')
+
+if (toastTrigger) {
+  const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+  toastTrigger.addEventListener('click', () => {
+    toastBootstrap.show()
+  })
+}</script>
+
+
+<script>const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))</script>
+</body>
+</html>
